@@ -1,0 +1,9 @@
+# Build and Release Folders
+node_modules/
+dist/
+dev/
+min/
+src/
+
+# Other files and folders
+.settings/
