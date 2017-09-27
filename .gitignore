@@ -4,6 +4,7 @@ dist/
 dev/
 min/
 src/
+docs/
 
 # Other files and folders
 .settings/
