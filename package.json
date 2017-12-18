@@ -1,6 +1,6 @@
 {
   "name": "domtool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dom tool",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,8 @@
   "devDependencies": {
     "ac-build": "^1.0.15",
     "eslint-config-ray": "^1.0.23"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
