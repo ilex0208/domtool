@@ -4,7 +4,6 @@ module.exports = {
     getComputedStyle: true
   },
   rules: {
-    'no-magic-numbers': 0,
-    'no-const-assign': 0
+    'no-magic-numbers': 0
   }
 };
