@@ -1,6 +1,6 @@
 {
   "name": "domtool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "dom tool",
   "main": "index.js",
   "scripts": {
