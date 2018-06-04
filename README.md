@@ -1,7 +1,8 @@
 # DOM Tool
-> Tool for DOM
 
-```
+Tool for DOM
+
+```bash
 npm install domtool --save
 ```
 
@@ -118,12 +119,14 @@ addEventListener(window, 'scroll', handle)
 ```
 
 ## removeEventListener
+
 ```js
 import removeEventListener from 'domtool/lib/removeEventListener';
 removeEventListener(window, 'scroll', handle)
 ```
 
 ## throttle
+
 ```js
 import throttle from 'domtool/lib/throttle';
 throttle(fn, 100)
@@ -133,15 +136,45 @@ throttle(fn, data, null, 500, 1000)
 ```
 
 ## onEndTransition
+
 ```js
 import onEndTransition from 'domtool/lib/onEndTransition';
 onEndTransition(el, handle)
 ```
 
 ## inViewport
+
 ```js
 import inViewport from 'domtool/lib/inViewport';
 inViewport(el) // true if elem is in the current viewport
 inViewport(el, 100) // true if elem is in the current viewport or within 100px of it
 inViewport(el, -100) // true if elem is in the current viewport and not within 99px of the edge
 ```
+
+## scrollIntoView
+
+```js
+import { scrollIntoView } from 'domtool';
+scrollIntoView(source,container,config);
+```
+
+* options
+
+  |params|type|default|description|
+  |------|------|------|------|
+  | source | HTMLElement | - | node wanted to show |
+  | container | HTMLElement | - | scroll to container |
+  | config | object | - | config |
+
+* config
+
+  |params|type|default|description|
+  |------|------|------|------|
+  | alignWithLeft | Boolean | - | whether align with left edge |
+  | alignWithTop | Boolean | - | whether align with top edge |
+  | offsetTop | Number | - | offset top |
+  | offsetLeft | Number | - | offset left |
+  | offsetBottom | Number | - | offset bottom |
+  | offsetRight | Number | - | offset right |
+  | allowHorizontalScroll | Boolean | - | whether allow horizontal scroll container |
+  | onlyScrollIfNeeded | Boolean | - | whether scroll container when source is visible |
