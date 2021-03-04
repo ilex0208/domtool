@@ -6,6 +6,10 @@ Tool for DOM
 npm install domtool --save
 ```
 
+## docs
+
+[domtool doc](https://unpkg.com/domtool@latest/docs/index.html)
+
 ## insertKeyframesRule
 
 ```js
@@ -155,7 +159,8 @@ inViewport(el, -100) // true if elem is in the current viewport and not within 9
 
 ```js
 import { scrollIntoView } from 'domtool';
-scrollIntoView(source,container,config);
+
+scrollIntoView(source, container, config);
 ```
 
 * options
